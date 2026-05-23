@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase, isSupabaseConfigured } from './supabaseClient';
 import CompanionMonitor from './components/CompanionMonitor';
 import DoctorDashboard from './components/DoctorDashboard';
+import SchoolDashboard from './components/SchoolDashboard';
 import { 
   Brain, User, ShieldAlert, Lock, Mail, Users, School, HeartPulse
 } from 'lucide-react';
@@ -336,6 +337,8 @@ function App() {
           <main className="p-6">
             {userRole === 'healthcare' ? (
               <DoctorDashboard darkMode={darkMode} />
+            ) : userRole === 'school' ? (
+              <SchoolDashboard darkMode={darkMode} />
             ) : (
               <CompanionMonitor darkMode={darkMode} />
             )}
