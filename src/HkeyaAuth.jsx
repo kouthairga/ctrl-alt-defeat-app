@@ -58,7 +58,7 @@ export default function HkeyaAuth({ onAuthSuccess, darkMode }) {
         darkMode ? 'bg-slate-900/50 border-slate-800 backdrop-blur-md' : 'bg-white border-slate-200'
       }`}>
         <div className="text-center space-y-2">
-          <div className="inline-flex p-3 bg-gradient-to-tr from-indigo-600 to-purple-600 rounded-2xl text-white shadow-lg animate-pulse">
+          <div className="inline-flex p-3 bg-linear-to-tr from-indigo-600 to-purple-600 rounded-2xl text-white shadow-lg animate-pulse">
             <Brain className="w-8 h-8" />
           </div>
           <h1 className="text-2xl font-black tracking-tight">HKEYA • حكاية</h1>
@@ -194,7 +194,7 @@ export default function HkeyaAuth({ onAuthSuccess, darkMode }) {
                 <button
                   type="submit"
                   disabled={isLoading || (role === 'parent' && !consent)}
-                  className="w-full py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-black text-xs uppercase tracking-widest rounded-xl shadow-lg transition-all"
+                  className="w-full py-3 bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-black text-xs uppercase tracking-widest rounded-xl shadow-lg transition-all"
                 >
                   {isLoading ? (
                     <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>

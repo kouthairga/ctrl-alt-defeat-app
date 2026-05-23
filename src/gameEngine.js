@@ -61,7 +61,7 @@ export const analyserGameplayPHQ9 = async (actionsGameplay, historiquePrecedent)
         notif_ecole: resultatClinique.rapport_enseignant,
         statut_alerte: resultatClinique.severite_alerte
       }]);
-    } catch (e) {
+    } catch {
       console.log("Supabase insertion skipped or mock mode active");
     }
 
